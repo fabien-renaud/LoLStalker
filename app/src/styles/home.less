@@ -1,0 +1,82 @@
+@title-color: #fff;
+@text-color: #555;
+@input-bg-color: rgba(0,0,0,0.3);
+@input-bg-color-hover: rgba(0,0,0,0.5);
+
+@bg-color1: rgba(38,48,57,0.8);
+@second-color1: #54718c;
+@title-color1: #fff;
+@text-color1: #ccc;
+@border-color1: #545454;
+@border-color-focus1: rgba(246,222,167,0.4);
+@placeholder1: #888;
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../images/ashe_splash.jpg');
+  height: 100%;
+  align-items: center;
+}
+
+.input-summoner {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  border: 1px solid @border-color1;
+  transition: ease-in-out 0.2s ease-in-out;
+}
+
+.input-summoner-input {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  height: 60px;
+  background: @input-bg-color;
+  border: none;
+  color: @text-color1;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-summoner-input::placeholder {
+  color: @placeholder1;
+}
+
+.input-summoner-append {
+  display: flex;
+  align-items: center;
+}
+
+.input-summoner-btn-region, .input-summoner-btn-submit {
+  // position: relative;
+  // display: inline-block;
+  // vertical-align: middle;
+  // text-align: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  height: 60px;
+  background: @input-bg-color;
+  border: none;
+  color: @text-color1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-summoner-input:hover, .input-summoner-btn-region:hover, .input-summoner-btn-submit:hover {
+  background: @input-bg-color-hover;
+}
+
+.input-summoner-btn-region {
+  border-left: none;
+}
+
+.input-summoner-btn-submit {
+  border-left: 1px solid @border-color1;
+}
+
+.border-focus {
+  border-color: @border-color-focus1;
+}
